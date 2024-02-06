@@ -33,8 +33,54 @@ int main() {
     } 
     else {
       printResponse("Sorry, I didn't understand that.");
-    }
+
+#include <stdio.h>
+#include <string.h>
+
+// Additional company resources
+char* dellRep = "John Smith";
+char* ciscoRep = "Sarah Lee"; 
+char* hpeRep = "Mike Chan";
+
+void printResourcePerson(char* company) {
+  if(strcmp(company, "Dell") == 0) {
+    printf("%s is your Dell resource.\n", dellRep);
   }
+  else if(strcmp(company, "Cisco") == 0) {
+    printf("%s is your Cisco resource.\n", ciscoRep);
+  }
+  else if(strcmp(company, "HPE") == 0) {
+    printf("%s is your HPE resource.\n", hpeRep);
+  }
+  else {
+    printf("Sorry, I don't know that company resource.\n");
+  }
+}
+
+int main() {
+
+  char input[MAX_MESSAGE_LENGTH];
+
+  // Existing chatbot code
+
+  while(1) {
+    
+    fgets(input, MAX_MESSAGE_LENGTH, stdin);
+
+    if(strcmp(input, "Who is my Dell resource?") == 0) {
+      printResourcePerson("Dell");
+    }
+    else if(strcmp(input, "Who is my Cisco resource?") == 0) {
+      printResourcePerson("Cisco");
+    }
+    else if(strcmp(input, "Who is my HPE resource?") == 0) { 
+      printResourcePerson("HPE");
+    }
+    
+    // Rest of message handling
+
+  } 
+    // Need to figure out how to connect a directory next time - CM
 
   return 0;
 }

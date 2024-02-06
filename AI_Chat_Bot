@@ -4,7 +4,7 @@
 #define MAX_MESSAGE_LENGTH 256
 
 void introduceBot() {
-  printf("Hello! I am a simple chat bot.\n"); 
+  printf("Hello! I am NAT GPT!.\n"); 
 }
 
 void printResponse(char* message) {

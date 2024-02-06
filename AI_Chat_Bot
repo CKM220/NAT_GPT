@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_MESSAGE_LENGTH 256
+
+void introduceBot() {
+  printf("Hello! I am a simple chat bot.\n"); 
+}
+
+void printResponse(char* message) {
+  printf("Bot: %s\n", message);
+}
+
+int main() {
+
+  char input[MAX_MESSAGE_LENGTH];
+  
+  introduceBot();
+  
+  while(1) {
+    printf("You: ");
+    fgets(input, MAX_MESSAGE_LENGTH, stdin);
+    
+    if(strcmp(input, "Hi") == 0 || strcmp(input, "Hello") == 0) {
+      printResponse("Hi there! Nice to meet you.");  
+    }
+    else if(strcmp(input, "How are you?") == 0) {
+      printResponse("I'm doing well, thanks!"); 
+    }
+    else if(strcmp(input, "Bye") == 0 || strcmp(input, "Goodbye") == 0) {
+      printResponse("Goodbye!");
+      break;
+    } 
+    else {
+      printResponse("Sorry, I didn't understand that.");
+    }
+  }
+
+  return 0;
+}

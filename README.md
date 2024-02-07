@@ -1,11 +1,12 @@
 NAT GPT Chat Bot
-This is a simple chat bot program written in C. It provides some basic conversational capabilities.  Don't Judge me!lol
+This is a simple chat bot program written in C. It provides some basic conversational capabilities. 
+Started 4/20/2023 
 
 Features
-The chat bot can: Find an Insight resource - NAT resources, 
+The chatbot can: Find an Insight resource - NAT resources, 
 
 Greet users
-Respond to common greetings like "Hi", "Hello", and "How are you?"
+Respond to common greetings like "Hi", "Hello", and "How can NAT GPT help you today?"
 Answer questions about company resources e.g. "Who is my Dell resource?"
 Say goodbye when the user types "Bye"
 Let the user know when it does not understand the input
